@@ -35,9 +35,6 @@
        <section class="presentation">
          <h1>Qui suis je ? Who am I ? 我是谁 ?</h1>
         <div class="sec">
-          <div class="left">
-             <img src="cam.jpg" class="aaa" alt="ma photo">
-          </div>
           <div class="right">
           <p>Je m'appelle Camille, j'ai 31 ans et je cherche à me reconvertir dans l'informatique avec pour objectif de devenir développeur. </p>
           <p>Cette pag web me permet de m'exercer au codage et de pouvoir me présenter aux <strong>éventuels recruteurs.</strong> </p>
@@ -45,6 +42,9 @@
           <p>Je recherche donc actuellement un stage ou une alternance afin de pouvoir mieux me former!</p>
           <p>Je suis plutôt doué pour les langues puisque je parle couramment le <strong>chinois et l'anglais</strong>.</p>
           <p>Je vous invite à parcourir les sections du site pour en apprendre davantage.</p>
+          </div>
+          <div class="left">
+            <img src="cam.jpg" alt="ma photo">
           </div>
         </div>
        </section>
@@ -148,6 +148,21 @@
          </div>
        </section>
      </article>
+     <script>
+       var moi = {
+         welcome: "Bienvenu sur le site de",
+         prenom: "Camille Julien",
+         nom: "Leost",
+
+           id : function(){
+             return "welcome:" + this.welcome +
+                    "\nprenom:" + this.prenom
+                    "\nnom:"   + this.nom;
+           }
+         }
+
+         alert(moi.id());
+     </script>
      <footer>
          <p>Copyright 2019 Camille J. Léost -Toute reproduction interdite</p>
      </footer>
